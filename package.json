@@ -1,0 +1,37 @@
+{
+  "name": "feathers-action-types",
+  "version": "1.0.0",
+  "description": "flux action types for feathers services",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test.js",
+    "lint": "standard",
+    "format": "standard --format"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahdinosaur/feathers-action-types.git"
+  },
+  "keywords": [
+    "feathers",
+    "feathersjs",
+    "flux",
+    "redux",
+    "actions",
+    "fsa",
+    "constants"
+  ],
+  "author": "Mikey <michael.williams@enspiral.com> (http://dinosaur.os)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ahdinosaur/feathers-action-types/issues"
+  },
+  "homepage": "https://github.com/ahdinosaur/feathers-action-types#readme",
+  "devDependencies": {
+    "standard": "^5.4.1",
+    "tape": "^4.2.2"
+  },
+  "dependencies": {
+    "constant-case": "^1.1.1"
+  }
+}
