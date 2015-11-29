@@ -33,7 +33,7 @@ var createActionTypes = require('feathers-action-types');
 
 ## API
 
-### [createActionTypes](index.js#L50)
+### [createActionTypes](index.js#L60)
 
 Given a resource name, returns respective feathers action types.
 
@@ -48,18 +48,28 @@ action type constants and aliases to action type constants.
 **Example**
 
 ```js
-var createActionTypes = require('feathers-action-types')
-
 createActionTypes('users')
 // => {
-//   USER_FIND_START: USER_FIND_START,
-//   USER_FIND_SUCCESS: USER_FIND_SUCCESS,
-//   USER_FIND_ERROR: USER_FIND_ERROR,
-//   findStart: USER_FIND_START,
-//   findSuccess: USER_FIND_SUCCESS,
-//   findError: USER_FIND_ERROR,
-//   USER_GET_START: USER_GET_START,
+//   USERS_FIND_START: USERS_FIND_START,
+//   USERS_FIND_SUCCESS: USERS_FIND_SUCCESS,
+//   USERS_FIND_ERROR: USERS_FIND_ERROR,
+//   findStart: USERS_FIND_START,
+//   findSuccess: USERS_FIND_SUCCESS,
+//   findError: USERS_FIND_ERROR,
+//   USERS_GET_START: USERS_GET_START,
 //   ...
+//   USERS_CREATE_START: USERS_CREATE_START,
+//   ...
+//   USERS_UPDATE_START: USERS_UPDATE_START,
+//   ...
+//   USERS_PATCH_START: USERS_PATCH_START,
+//   ...
+//   USERS_REMOVE_START: USERS_REMOVE_START,
+//   USERS_REMOVE_SUCCESS: USERS_REMOVE_SUCCESS,
+//   USERS_REMOVE_ERROR: USERS_REMOVE_ERROR,
+//   removeStart: USERS_REMOVE_START,
+//   removeSuccess: USERS_REMOVE_SUCCESS,
+//   removeError: USERS_REMOVE_ERROR,
 // }
 ```
 
