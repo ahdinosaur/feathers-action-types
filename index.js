@@ -21,6 +21,29 @@ function addGroup (resource, actionTypes, group) {
   actionTypes[errorAlias] = error
 }
 
+/*
+ * Given a resource name, returns respective feathers action types.
+ *
+ * Action types are represented as an object mapping
+ * action type constants and aliases to action type constants.
+ *
+ * ```js
+ * createActionTypes('users')
+ * // => {
+ * //   USER_FIND_START: USER_FIND_START,
+ * //   USER_FIND_SUCCESS: USER_FIND_SUCCESS,
+ * //   USER_FIND_ERROR: USER_FIND_ERROR,
+ * //   findStart: USER_FIND_START,
+ * //   findSuccess: USER_FIND_SUCCESS,
+ * //   findError: USER_FIND_ERROR,
+ * //   USER_GET_START: USER_GET_START,
+ * //   ...
+ * // }
+ * ```
+ * @param {String} `resource`
+ * @return {Object} `actionTypes`
+ * @api public
+ */
 function createActionTypes (resource) {
   var actionTypes = {}
 

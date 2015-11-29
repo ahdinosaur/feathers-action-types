@@ -6,7 +6,8 @@
   "scripts": {
     "test": "tape test.js",
     "lint": "standard",
-    "format": "standard --format"
+    "format": "standard --format",
+    "docs": "verb"
   },
   "repository": {
     "type": "git",
@@ -27,9 +28,18 @@
     "url": "https://github.com/ahdinosaur/feathers-action-types/issues"
   },
   "homepage": "https://github.com/ahdinosaur/feathers-action-types#readme",
+  "verb": {
+    "related": {
+      "list": [
+        "action-names"
+      ]
+    }
+  },
   "devDependencies": {
     "standard": "^5.4.1",
-    "tape": "^4.2.2"
+    "tape": "^4.2.2",
+    "verb": "^0.8.10",
+    "verb-cli": "^0.7.4"
   },
   "dependencies": {
     "constant-case": "^1.1.1"
